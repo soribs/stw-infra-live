@@ -2,7 +2,7 @@ project_name         = "stewardship"
 environment          = "prod"
 location             = "southafricanorth"
 admin_username       = "azureadmin"
-admin_ssh_public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINOYBXZ18zxnFl/y52Adell4/gGCNmsWCYFlm2PCv2e0 RChri@SoRibs-PC"
+admin_ssh_public_key = "ssh ed00000 AAA....Your_public_key"
 vm_size              = "Standard_B2s"
 
 vnet_address_space            = ["10.0.0.0/16"]
