@@ -48,7 +48,7 @@ variable "admin_ssh_public_key" {
 variable "vm_size" {
   description = "VM size"
   type        = string
-  default     = "Standard_B2s"
+  default     = "Standard_B2ms"
 }
 
 variable "data_disks" {
