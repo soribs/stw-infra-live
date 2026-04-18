@@ -1,6 +1,6 @@
 # 1. Resource Group 
 module "resource_group" {
-  source = "https://github.com/soribs/stw-infra-live?ref=v1.0.0"
+  source = "git::https://github.com/soribs/stw-infra-live?ref=v1.0.0"
 
   project_name = var.project_name
   environment  = var.environment
@@ -10,7 +10,7 @@ module "resource_group" {
 
 # 2. Virtual Network 
 module "vnet" {
-  source = "https://github.com/soribs/terraform-azurerm-vnet?ref=v1.0.0"
+  source = "git::https://github.com/soribs/terraform-azurerm-vnet?ref=v1.0.0"
 
   project_name        = local.common.project_name
   environment         = local.common.environment
@@ -24,7 +24,7 @@ module "vnet" {
 
 # 3. Subnets + NSG 
 module "subnet_nsg" {
-  source = "https://github.com/soribs/terraform-azurerm-subnet-nsg?ref=v1.0.0"
+  source = "git::https://github.com/soribs/terraform-azurerm-subnet-nsg?ref=v1.0.0"
 
   project_name             = local.common.project_name
   environment              = local.common.environment
@@ -39,7 +39,7 @@ module "subnet_nsg" {
 
 # 4. Public IP – Bastion 
 module "pip_bastion" {
-  source = "https://github.com/soribs/terraform-azurerm-public-ip?ref=v1.0.0"
+  source = "git::https://github.com/soribs/terraform-azurerm-public-ip?ref=v1.0.0"
 
   project_name        = local.common.project_name
   environment         = local.common.environment
@@ -53,7 +53,7 @@ module "pip_bastion" {
 
 # 5. Public IP – NAT Gateway 
 module "pip_nat" {
-  source = "https://github.com/soribs/terraform-azurerm-public-ip?ref=v1.0.0"
+  source = "git::https://github.com/soribs/terraform-azurerm-public-ip?ref=v1.0.0"
 
   project_name        = local.common.project_name
   environment         = local.common.environment
@@ -67,7 +67,7 @@ module "pip_nat" {
 
 # 6. Bastion
 module "bastion" {
-  source = "https://github.com/soribs/terraform-azurerm-bastion?ref=v1.0.0"
+  source = "git::https://github.com/soribs/terraform-azurerm-bastion?ref=v1.0.0"
 
   project_name                  = local.common.project_name
   environment                   = local.common.environment
@@ -83,7 +83,7 @@ module "bastion" {
 
 # 7. NAT Gateway
 module "nat_gateway" {
-  source = "https://github.com/soribs/terraform-azurerm-nat-gateway?ref=v1.0.0"
+  source = "git::https://github.com/soribs/terraform-azurerm-nat-gateway?ref=v1.0.0"
 
   project_name        = local.common.project_name
   environment         = local.common.environment
@@ -98,7 +98,7 @@ module "nat_gateway" {
 
 # 8. Storage Account
 module "storage" {
-  source = "https://github.com/soribs/terraform-azurerm-storage-account?ref=v1.0.0"
+  source = "git::https://github.com/soribs/terraform-azurerm-storage-account?ref=v1.0.0"
 
   project_name        = local.common.project_name
   environment         = local.common.environment
@@ -114,7 +114,7 @@ module "storage" {
 
 # 9. Virtual Machine + NIC
 module "vm" {
-  source = "https://github.com/soribs/terraform-azurerm-vm?ref=v1.0.0"
+  source = "git::https://github.com/soribs/terraform-azurerm-vm?ref=v1.0.0"
 
   project_name         = local.common.project_name
   environment          = local.common.environment
@@ -131,7 +131,7 @@ module "vm" {
 
 # 10. Data Disks
 module "data_disks" {
-  source = "https://github.com/soribs/terraform-azurerm-data-disks?ref=v1.0.0"
+  source = "git::https://github.com/soribs/terraform-azurerm-data-disks?ref=v1.0.0"
 
   project_name        = local.common.project_name
   environment         = local.common.environment
@@ -146,7 +146,7 @@ module "data_disks" {
 
 # 11. Monitoring (DCR)
 module "monitoring" {
-  source = "https://github.com/soribs/terraform-azurerm-monitoring?ref=v1.0.0"
+  source = "git::https://github.com/soribs/terraform-azurerm-monitoring?ref=v1.0.0"
 
   project_name         = local.common.project_name
   environment          = local.common.environment
