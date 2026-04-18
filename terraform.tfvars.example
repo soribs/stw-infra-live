@@ -1,0 +1,24 @@
+project_name         = "stewardship"
+environment          = "prod"
+location             = "southafricanorth"
+admin_username       = "azureadmin"
+admin_ssh_public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINOYBXZ18zxnFl/y52Adell4/gGCNmsWCYFlm2PCv2e0 RChri@SoRibs-PC"
+vm_size              = "Standard_B2s"
+
+vnet_address_space            = ["10.0.0.0/16"]
+vm_subnet_address_prefix      = "10.0.1.0/24"
+bastion_subnet_address_prefix = "10.0.255.0/26"
+
+data_disks = {
+  "data01" = {
+    size_gb      = 64
+    storage_type = "Standard_LRS"
+    lun          = 0
+    caching      = "ReadWrite"
+  }
+}
+
+tags = {
+  owner      = "platform-team"
+  cost_center = "cc-001"
+}
