@@ -1,6 +1,6 @@
 # 1. Resource Group 
 module "resource_group" {
-  source = "git::https://github.com/soribs/stw-infra-live?ref=v1.0.0"
+  source = "git::https://github.com/soribs/terraform-azurerm-resource-group?ref=v1.0.0"
 
   project_name = var.project_name
   environment  = var.environment
