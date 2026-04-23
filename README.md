@@ -154,7 +154,7 @@ stw-infra-live/
 ## 👨‍💻 Author
 
 **Christopher Ribeiro** — DevOps Engineer  
-[GitHub](https://github.com/soribs) • [LinkedIn](https://linkedin.com/in/your-profile)
+[GitHub](https://github.com/soribs) • [LinkedIn](www.linkedin.com/in/christopher-ribeiro-847699342)
 
 ---
 
